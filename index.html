@@ -1,1 +1,52 @@
-<h1>Pentagon.capital</h1>
+<html>
+  <head>
+    <script src="js/particles.js"></script>
+    <script>
+      window.onload = function () {
+        particlesJS.load('particles-js', 'particles.json', function() {
+          console.log('callback - particles.js config loaded');
+        });
+      }
+    </script>
+    <style>
+      body {
+        background-color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+      }
+
+      .content {
+        text-align: center;
+        z-index: 1;
+        margin: 6em auto;
+        min-width: 280px;
+        width: 50%;
+        color: #24282e;
+      }
+
+      .logo {
+        min-width: 250px;
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .particles {
+        background-color: #ffffff;
+        z-index: -1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+      }
+
+    </style>
+  </head>
+  <body>
+      <div class="particles" id="particles-js"></div>
+      <div class="content">
+        <img class="logo" src="img/logo.svg" />
+        <h2>Creating Blockchain solutions for the financial industry</h2>
+      </div>
+  </body>
+</html>
