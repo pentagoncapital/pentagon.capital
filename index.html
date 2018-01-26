@@ -1,5 +1,7 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <script src="js/particles.js"></script>
     <script>
       window.onload = function () {
@@ -18,15 +20,18 @@
       .content {
         text-align: center;
         z-index: 1;
-        margin: 6em auto;
-        min-width: 280px;
-        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 720px;
+        max-width: 80%;
         color: #24282e;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
       }
 
       .logo {
-        min-width: 250px;
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
       }
 
@@ -46,7 +51,7 @@
       <div class="particles" id="particles-js"></div>
       <div class="content">
         <img class="logo" src="img/logo.svg" />
-        <h2>Creating Blockchain solutions for the financial industry</h2>
+        <h3>Creating technology solutions for the financial industry</h3>
       </div>
   </body>
 </html>
